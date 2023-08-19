@@ -9,7 +9,6 @@ print('''[ 1 ] somar
 opcao = int(input('>>> Qual a opcao desejada? '))
 
 def menu2(opcao):
-    while opcao != 0:
         if opcao == 1:
             print(calculadora.somar(n1, n2))
         elif opcao == 2:
@@ -18,9 +17,9 @@ def menu2(opcao):
             print(calculadora.multiplicar(n1, n2))
         elif opcao == 4:
             print(calculadora.dividir(n1, n2))
+        elif opcao == 0:
+             return print('Fim. Voce saiu.')
         else:
             print('Opcao invalida. Tente novamente.')
-    print('===' * 10)
-print('Fim.')
 
-menu2(n1, n2)
+menu2(opcao)
