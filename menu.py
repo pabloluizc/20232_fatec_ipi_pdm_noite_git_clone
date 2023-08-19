@@ -10,6 +10,8 @@ while opcao != 5:
     opcao = int(input('>>> Qual a opcao desejada? '))
     if opcao == 1:
         print(calculadora.somar(1, 2))
+    elif opcao == 2:
+        print(calculadora.subtrair(1, 2))
     else:
         print('Opcao invalida. Tente novamente.')
     print('===' * 10)
