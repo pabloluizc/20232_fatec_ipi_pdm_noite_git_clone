@@ -1,3 +1,4 @@
+import calculadora
 n1 = int(input('Primeiro valor: '))
 n2 = int(input('Segundo valor: '))
 opcao = 0
@@ -12,6 +13,8 @@ while opcao != 5:
         print(calculadora.somar(1, 2))
     elif opcao == 2:
         print(calculadora.subtrair(1, 2))
+    elif opcao ==3:
+        print(calculadora.multiplicar(1, 2))
     else:
         print('Opcao invalida. Tente novamente.')
     print('===' * 10)
