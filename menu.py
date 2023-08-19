@@ -10,11 +10,13 @@ while opcao != 5:
           [ 5 ] sair do menu''')
     opcao = int(input('>>> Qual a opcao desejada? '))
     if opcao == 1:
-        print(calculadora.somar(1, 2))
+        print(calculadora.somar(n1, n2))
     elif opcao == 2:
-        print(calculadora.subtrair(1, 2))
+        print(calculadora.subtrair(n1, n2))
     elif opcao ==3:
-        print(calculadora.multiplicar(1, 2))
+        print(calculadora.multiplicar(n1, n2))
+    elif opcao ==4:
+        print(calculadora.dividir(n1, n2))
     else:
         print('Opcao invalida. Tente novamente.')
     print('===' * 10)
